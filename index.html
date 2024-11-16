@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vethiecoot</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <!-- Sidebar Navigation for Mobile -->
+    <ul class="sidebar">
+      <li onclick="hideSidebar()">
+        <a href="#" aria-label="Close sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+          </svg>
+        </a>
+      </li>
+      <li><a href="#home">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#video">My Video</a></li>
+    </ul>
+  
+    <!-- Desktop Navigation -->
+    <ul>
+      <li><a href="#"><img src="logo.png" alt=""></a></li>
+      <li class="hideOnMobile"><a href="#home">About</a></li>
+      <li class="hideOnMobile"><a href="#services">Services</a></li>
+      <li class="hideOnMobile"><a href="#gallery">Gallery</a></li>
+      <li class="hideOnMobile"><a href="#testimonials">Testimonials</a></li>
+      <li class="hideOnMobile"><a href="#video">My Video</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#" aria-label="Open sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex'; // Show sidebar
+    }
+  
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none'; // Hide sidebar
+    }
+  </script>
+  
+   
+  
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>Quality Care for Your Furry Friends</h2>
+    <p>Providing compassionate and professional veterinary care in a welcoming environment.</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>At Vethiecoot, we believe every pet deserves top-quality healthcare. Our team of skilled veterinarians and pet care professionals are here to ensure your furry family members are healthy, happy, and thriving.</p>
+    <p>We treat every pet with the utmost love and respect, as if they were our own.</p>
+    <div class="mission-section">
+      <h2>MISSION</h2>
+      <p>To provide high quality veterinary care to all animals in ensuring their health and well-being, to create a welcoming and stress free environment for pets and their owners and to foster a strong bond between pets and their families through education and support.</p>
+    </div>
+    <div class="vission-section">
+      <h2>VISSION</h2>
+      <p>
+        <p>To inspire a love and respect to animals, promoting responsible pet ownership and advocating for animals rig.</p></p>
+    </div>
+    <div class="gallery-poster">
+      <img src="image/poster.jpg" alt="Playful kitten during check-up">
+    </div>
+  </section>
+
+  <section class="vedio" id="video">
+        <div class="gallery-vedio">
+          <video controls autoplay muted loop>
+            <source src="image/video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-items">
+      <div class="item">
+        <h3>General Check-Ups</h3>
+        <p>Routine exams to keep your pets healthy and catch potential issues early.</p>
+        <button class="service-button">Check Here</button>
+      </div>
+      <div class="item">
+        <h3>Vaccinations</h3>
+        <p>Essential vaccines to protect your pets from common diseases.</p>
+        <button class="service-button">Check Here</button>
+      </div>
+      <div class="item">
+        <h3>Grooming</h3>
+        <p>Full grooming services to keep your pets looking and feeling their best.</p>
+        <button class="service-button">Check Here</button>
+      </div>
+      <div class="item">
+        <h3>Surgery</h3>
+        <p>Experienced surgical care for various pet health needs.</p>
+        <button class="service-button">Check Here</button>
+      </div>
+      <div class="item">
+        <h3>Dental Care</h3>
+        <p>Keep your pets’ teeth and gums healthy with our dental services.</p>
+        <button class="service-button">Check Here</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pet Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Our Happy Patients</h2>
+    <div class="gallery-items">
+      <div class="gallery-item">
+        <img src="AdobeStock_285015441-1024x683.jpeg" alt="Cat receiving dental care">
+      </div>
+      <div class="gallery-item">
+        <img src="PuppyVaccinations.jpg" alt="Dog getting vaccinated">
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-items">
+      <div class="testimonial">
+        <p>"The team at Paws & Care is amazing! They treat my dog like family, and I know he's in good hands."</p>
+        <span>- Jelisa M.</span>
+      </div>
+      <div class="testimonial">
+        <p>"Friendly staff, excellent care, and they were great at keeping my cat calm during her check-up."</p>
+        <span>- Reina G.</span>
+      </div>
+      <div class="testimonial">
+        <p>"I couldn't be happier with the grooming services! My dog looks fantastic every time we visit."</p>
+        <span>- Mae Ann C.</span>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer id="contact">
+    <p>Contact us at <a href="ferelouerlindal.26@Gmail.com">ferelouerlindal.26@Gmail.com</a></p>
+    <p>&copy; 2024 Vethiecoot.</p>
+  </footer>
+</body>
+</html>
