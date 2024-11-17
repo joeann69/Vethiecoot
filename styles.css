@@ -133,7 +133,13 @@ nav li:first-child {
 
 @media (max-width: 400px) {
   .sidebar {
-    width: 100%;
+    width: 100px; /* Adjust width for smaller screens */
+    padding: 10px;
+  }
+
+  .sidebar a {
+    padding: 8px;
+    font-size: 10px; /* Adjust font size for smaller screens */
   }
 }
 
